@@ -5,8 +5,13 @@ import App from './components/App';
 import { Provider } from 'react-redux';
 import configureStore from './store';
 import * as serviceWorker from './serviceWorker';
+import hnTwilightApi from './services/hnTwilightApi';
 
 //GlobalStyles();
+
+hnTwilightApi.getTopStoryIds().then(
+  ids => console.log(ids)
+)
 
 const renderApp = () => {
   const initialState = {};

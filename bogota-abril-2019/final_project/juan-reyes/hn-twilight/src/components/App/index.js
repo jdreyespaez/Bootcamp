@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { sleepMode } from '../../styles/twilight';
-// import List from 'components/List';
+import List from '../List';
 
 import { Wrapper, Title } from './styles';
 
@@ -12,7 +12,7 @@ class App extends Component {
         <div>
           <Wrapper>
             <Title>Hacker News Feed</Title>
-            {/* <List /> */}
+            <List />
           </Wrapper>
         </div>
       </ThemeProvider>
